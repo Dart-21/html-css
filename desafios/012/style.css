@@ -1,224 +1,82 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
 }
 
-body {
-    margin: 0px;
-
+:root {
+    --fonte1: verdana, gevana, tahoma, sans-serif;
+    --fonte2: "Dancing Script", cursive;
+    --fonte3: "Playwrite IE", cursive;
 }
 
-
-header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-
-    background-color: black;
-    height: 200px;
-
-    max-width: 100%;
-}
-
-header h1 {
+header a, footer a {
     color: white;
-    text-align: center;
-    font-size: 3.2em;
-    padding-top: 50px;
-
-    margin-bottom: 10px;
-
-}
-
-header p a {
     text-decoration: none;
-    color: white;
 }
 
-header p a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
     font-weight: bold;
 }
 
-header p {
+body, html {
+    background-color: darkgray;
+    min-height: 100%;
+}
+
+header {
+    background-color: black;
     color: white;
     text-align: center;
 }
 
-main {
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    background-color: rgb(199, 89, 89);
-    background-attachment: scroll;
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
-#caixap1 {
+header > p {
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+
+    line-height: 2em;
+
+}
+
+section.normal {
     background-color: white;
+    color: black
+    font-size: 1.4em;
 
-    width: 100%;
-    height: 450px;
+}
 
+section.imagem {
+    background-color: rgb(55, 55, 55);
+    color: white;
+
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.507);
     
 }
 
-#caixap1 p {
-    font-size: 1.4em;
-    line-height: 2.0;
-
-    padding-left: 30px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-#caixap2  {
-    background: black url(imagens/background001.jpg) center no-repeat fixed;
-    background-size: cover;
-
-    width: 100%;
-    height: 500px;
-
-    position: relative;
-
-    box-shadow: inset 2px 6px 10px rgba(0, 0, 0, 0.648);
-}
-
-#caixap2 p {
-    color: white;
-    background-color: rgba(92, 92, 92, 0.304);
-    width: fit-content;
-
-    border-radius: 20px;
-    border: 1px solid black;
-
-    font-size: 1.4em;
-    line-height: 2.0;
-
-    padding: 10px;
-
-    position: absolute;
-    top: 90px;
-    left: 30px;
-}
-
-#caixap3p4 {
-    background-color: white;
-
-    width: 100%;
-    height: 780px;
-
-    padding-bottom: 60px;
-
-}
-
-#caixap3p4 #p1 {
-    font-size: 1.4em;
-    line-height: 2.0;
-
-    padding-left: 30px;
-    padding-top: 100px;
-    padding-bottom: 40px;
-}
-
-
-#caixap3p4 #p2 {
-
-    font-size: 1.4em;
-    line-height: 2.0;
-
-    padding-left: 30px;
-    padding-top: 0px;
-    padding-bottom: 70px;
-}
-
-#caixap5 {
-    background: black url(imagens/background002.jpg) left center no-repeat fixed;
-    background-size: cover;
-
-    width: 100%;
-    height: 500px;
-
-    position: relative;
-
-    box-shadow: inset 2px 6px 10px rgba(0, 0, 0, 0.648);
-}
-
-#caixap5 p {
-    color: white;
-    background-color: rgba(36, 36, 36, 0.425);
-    width: fit-content;
-
-    border-radius: 20px;
-    border: 1px solid black;
-
-    font-size: 1.4em;
-    line-height: 2.0;
-
-    padding: 10px;
-
-    position: absolute;
-    top: 90px;
-    left: 30px;
-}
-
-#caixap6p7 {
-    background-color: white;
-
-    width: 100%;
-    height: 780px;
-
-    margin-bottom: 40px;
-}
-
-#caixap6p7 #p1 {
-    font-size: 1.4em;
-    line-height: 2.0;
-
-    padding-left: 30px;
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-
-#caixap6p7 #p2 {
-    font-size: 1.4em;
-    line-height: 2.0;
-
-    padding-left: 30px;
-    padding-top: 0px;
-    padding-bottom: 90px;
-}
-
-footer{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+footer {
     background-color: black;
     color: white;
-
-    min-height: 40px;
-    min-width: 100%;
-    font-size: 1.1em;
-
-    margin-bottom: 0px;
-
-}
-
-footer p {
     text-align: center;
+
     padding: 10px;
-
-    margin: 0px;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    font-weight: bolder;
 
 }
